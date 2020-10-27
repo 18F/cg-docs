@@ -93,6 +93,10 @@ cloud.gov depends on several external services.  In the event one or more of the
 ### GitHub
 If GitHub becomes unavailable, the live cloud.gov will continue to operate in its current state. The disruption would only impact the team's ability to update cloud.gov.
 
+### Brokered AWS Services
+
+If customer services provided through our cloud.gov brokers are unavailable or suffer data loss, we've documented
+restoration processes in our [internal AWS contingency runbook](https://github.com/cloud-gov/internal-docs/blob/master/runbooks/aws-contingency.md)
 #### Disruption lasting less than 7 days
 Cloud Operations will postpone any non-critical updates to the platform until the disruption is resolved.  If a critical update **must** be deployed, Cloud Operations will:
 
