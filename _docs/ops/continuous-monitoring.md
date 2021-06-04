@@ -110,7 +110,8 @@ The cloud.gov team has implemented a suite of automated components to provide co
 		* **AIDE:** Performs file alteration checks on all cloud.gov virtual machines on initial deploy and an hourly basis thereafter. Violations are shipped to our central alert system.
 	* Patch / vulnerability scanning:
 		* **Nessus:** runs nightly to scan for OS and database vulnerabilities.
-		* **OWASP ZAP:** runs monthly to scan for web application vulnerabilities.
+		* **OWASP ZAP:** runs monthly to scan for internal web application vulnerabilities.
+		* **NetSparker:** runs monthly to scan for public web application vulnerabilities (scheduled with GSA IT)
 * **Monitoring of the monitoring components:** The cloud.gov team uses BOSH as an automated way to continuously monitor the six monitoring components. (BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems. BOSH allows individual developers and teams to easily version, package and deploy software in a reproducible manner.)
 * **Continuous deployment of the monitoring components:** The cloud.gov team uses Concourse to provide automated continuous deployment of the components, to ensure the components stay up to date. In addition, one component, Nessus, has self-updating capabilities.
 * **Static code analysis:** The cloud.gov team uses Code Climate to automate code scanning on all original projects that cloud.gov builds. Code Climate results are published on every pull request (code change).
