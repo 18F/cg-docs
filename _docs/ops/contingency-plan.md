@@ -6,6 +6,8 @@ sidenav: true
 title: Contingency plan
 ---
 
+## Cloud.gov
+
 This Contingency Plan provides guidance for our team in the case of trouble delivering our essential mission and business functions because of disruption, compromise, or failure of any component of cloud.gov. As a general guideline, we consider "disruption" to mean more than 30 minutes of unexpected downtime or significantly reduced service for customer applications.
 
 Scenarios where that could happen include unexpected downtime of key external services, data loss, or [high-severity security incidents]({{ site.baseurl }}{% link _docs/ops/security-ir.md %}#1---high-severity). In the case of a security incident, the team uses the [Security Incident Response Guide]({{ site.baseurl }}{% link _docs/ops/security-ir.md %}) as well.
@@ -68,7 +70,7 @@ If the IC assesses that the overall response process is likely to last longer th
 
 IC communications:
 
-* At least once an hour: 
+* At least once an hour:
  * Post a brief update to StatusPage for cloud.gov users.
  * Send email updates to GSA Information Security and FedRAMP JAB representatives.
 * Monitor #cg-support and cloud-gov-support email.
@@ -106,7 +108,7 @@ Note: The cloud.gov team members have local copies of the repositories `internal
 
 Cloud Operations will postpone any non-critical updates to the platform until the disruption is resolved.  If a critical update **must** be deployed, Cloud Operations will:
 
-* Locate a copy of the current version of the required [git](https://git-scm.com/) repository by comparing last commit times of all checked out versions on Cloud Operations local systems and any copies held by cloud.gov systems (Concourse, BOSH director, etc.) 
+* Locate a copy of the current version of the required [git](https://git-scm.com/) repository by comparing last commit times of all checked out versions on Cloud Operations local systems and any copies held by cloud.gov systems (Concourse, BOSH director, etc.)
 * Pair with another member of Cloud Operations to:
   * Perform the change on the local copy of the repository (if the update requires a change to git-managed source code), or use local copies of the repository instead of remote GitHub repository references (if the update depends on remote repositories but implies no change to those repositories)
   * Manually deploy the change by provisioning a Concourse jumpbox container, copying in the repository/repositories, and executing any required steps by hand based on the Concourse pipeline
@@ -142,7 +144,7 @@ Major services (Cloud Foundry, BOSH, Concourse, and UAA) rely on databases provi
 
 #### Brokered AWS services
 
-cloud.gov is not dependent on the following services, but we do broker customer provisioning and access to these services, so our customers could be impacted if they were unavailable.  
+cloud.gov is not dependent on the following services, but we do broker customer provisioning and access to these services, so our customers could be impacted if they were unavailable.
 
 If a GovCloud service were wholly unavailable, Cloud Operations would, after receiving approval from our Authorizing Official, broker access to the AWS commercial cloud equivalent, as shown below:
 
@@ -179,6 +181,10 @@ This plan is most effective if all core cloud.gov team members know about it, re
   * At least once a year, and after major changes to our systems, we review and update the plan.
 * How we protect this plan from unauthorized modification:
   * This plan is stored in a public GitHub repository ([https://github.com/18F/cg-site](https://github.com/18F/cg-site)) with authorization to modify it limited to 18F staff by GitHub access controls. cloud.gov team policy is that 18F staff may not directly make changes to this document; they must propose a change by making a pull request and ask another team member to review and merge the pull request.
+
+## Federalist
+
+[This Contingency Plan doc](https://docs.google.com/document/d/1YG6oucagNO_ZmmlsLPdQeFABCiVcY1BYuhDEEvDwe4Q/edit?usp=sharing) provides guidance for our team in the case of trouble delivering our essential mission and business functions due to disruption, compromise, or failure of any system components or services.
 
 ---
 

@@ -7,6 +7,8 @@ title: Security Incident Response Guide
 linktitle: Security IR Guide
 ---
 
+## Cloud.gov
+
 This document outlines cloud.gov's internal process for responding to security incidents. It outlines roles and responsibilities during and after incidents, and it lays out the steps we'll take to resolve them.
 
 *If you're responding to an incident, [here's our IR checklist]({{ site.baseurl }}{% link _docs/ops/security-ir-checklist.md %}) as a short, actionable companion to this guide.*
@@ -116,8 +118,8 @@ Severity: high
 IC: Farmer Jane
 Responders: Spot the Dog, Farmer Dave
 
-We've confirmed reports of escaped chickens. 
-Looks like a fox may have tunneled into the run. 
+We've confirmed reports of escaped chickens.
+Looks like a fox may have tunneled into the run.
 Dave is working to fix the fence, Spot is tracking the fox.
 ```
 
@@ -140,7 +142,7 @@ At this point, we're trying to fix the issue! Remediation will be very situation
 
 - The team will develop a list of **leads** — actionable information about breaches, stolen data, etc. The IC should track these leads, maintain information about which are being investigated (and by whom), and what information that investigation leads. These can be tracked as checklists in the GitHub issue.
 
-- Similarly, the team will develop a list of **remediation steps**. The IC is likewise responsible for tracking those, making sure they're assigned and followed-up, and verifying them as they're completed. These may be tracked in the central GitHub issue as well. The IC should distinguish between immediate concerns which should be completed before the incident is considered resolved and long-term improvements/hardening which can be deferred to the Retrospective. 
+- Similarly, the team will develop a list of **remediation steps**. The IC is likewise responsible for tracking those, making sure they're assigned and followed-up, and verifying them as they're completed. These may be tracked in the central GitHub issue as well. The IC should distinguish between immediate concerns which should be completed before the incident is considered resolved and long-term improvements/hardening which can be deferred to the Retrospective.
 	- **If the incident involved exposure of information to an unauthorized party,** the remediation steps must include working with TTS Infrastructure and GSA Information Security to notify the owner of the information, coordinate with the owner of the information, and notify the recipient of their obligations for appropriate handling of the information in the context of applicable federal laws, directives, policies, and/or regulations. The specific appropriate point of contact for customers depends on the situation.
 
 - The response team should aim to adopt a *containment* strategy: if machines are compromised, they should avoid destroying or shutting them down if possible (this can hamper forensics). For AWS instances, you can leave the instance running and instead reconfigure the Security Group for the instance to drop all ingress and egress traffic until forensics can be performed.
@@ -239,6 +241,10 @@ Guidelines for addressing Low-sev issues:
 - Response should be business-hours.
 - Responders should avoid service degradation unless stakeholders agree.
 - Sitreps should be sent approximately daily.
+
+## Federalist
+
+The Federalist platform service adheres to the [TTS Handbook's security incidents guide](https://handbook.tts.gsa.gov/security-incidents/).
 
 ---
 
