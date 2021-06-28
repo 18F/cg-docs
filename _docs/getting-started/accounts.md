@@ -55,7 +55,7 @@ When you log into cloud.gov for the first time, follow the instructions to set t
 1. Go to log into your cloud.gov account at <https://login.fr.cloud.gov>
 1. Click on *Forgot your password?* link to reset your password
 1. Enter your email address into the `Email address` input and click *SEND EMAIL* to receive the reset password confirmation email
-1. Go to you email and click on the verification link in the first step of that email
+1. Go to your email and click on the verification link in the first step of that email
 1. Enter your email address in the `Email address` input on the reset password verification page and click *VERIFY EMAIL*
 1. Your email is verified and then copy/save the temporary password under the `Your temporary password`.
 1. Login to your cloud.gov account at <https://login.fr.cloud.gov/> with the new temporary password
