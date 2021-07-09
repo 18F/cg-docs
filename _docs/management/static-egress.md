@@ -34,3 +34,12 @@ All traffic from cloud.gov-hosted applications originates from these IP ranges:
 * `52.222.123.172/32`
 
 We publish these egress (outbound) IP ranges because that information is already public if you inspect any application on cloud.gov. Filtering by egress IP range is only suitable in *addition* to authentication and authorization between the client and server applications.
+
+### Managing requests to rate limited external resources
+
+Some external resources that your application can connect to may be rate limited. To ensure responsible use of rate-limited external resources, you should:
+
+* Check to see if rate limits will be applied to the resource you are trying to connect to.
+* Make sure you understand the behavior of the external resource in the event that a rate limit has been exceeded (e.g., returning an HTTP 429 response).
+* Set any fetch or refresh settings in your application for rate limited resources responsibly.
+* Check your application logs frequently for any HTTP responses indicating that a rate limit may have been exceeded, and adjust your application settings accordingly.
