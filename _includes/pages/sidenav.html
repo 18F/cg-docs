@@ -1,0 +1,19 @@
+{%- comment -%} 
+The sidenav is not loaded by default on the main pages. To include this navigation you can either use the
+_layouts/page.html layout template, or you can add "sidenav: true" in the front-matter of your pages
+{%- endcomment -%}
+
+<aside class="usa-layout-docs-sidenav desktop:grid-col-4 padding-bottom-4">
+  <nav>
+    {% for nav_section in site.data.pages.navigation.sidenav %}
+      <h3>{{ nav_section.text }}</h3>
+      <ul class="usa-sidenav">
+        {% for nav_item in nav_section.subfolderitems %}
+          <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}{{ nav_item.href }}">{{ nav_item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </nav>
+</aside>

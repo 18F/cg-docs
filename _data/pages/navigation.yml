@@ -1,0 +1,113 @@
+primary:
+  - name: Features
+    url: /pages/features/
+  - name: Success Stories
+    url: /pages/success-stories/
+  - name: Documentation
+    url: /pages/documentation/
+  - name: Pricing
+    url: /pages/pricing/
+  - name: Contact
+    url: /pages/contact/
+    # Look inside assets/js/index.js to see that how this url changes depending on enviroment
+secondary:
+  - name: Platform Status
+    url: https://federalist.statuspage.io
+  - name: Login
+    url: https://federalistapp.18f.gov
+    external: true
+    class: usa-button usa-button-secondary nav-button
+
+footer:
+  - text: Home
+    href: /pages/
+  - text: Features
+    href: /pages/features/
+  - text: Success Stories
+    href: /pages/success-stories/
+  - text: Documentation
+    href: /pages/documentation/
+  - text: Pricing
+    href: /pages/pricing/
+  - text: Contact
+    href: /pages/contact/
+  - text: Manage Sites
+    href: https://federalistapp.18f.gov
+    external: true
+
+
+sidenav:
+  - text: Using Federalist
+    href: /pages/documentation/
+    subfolderitems:
+      - text: Why use Federalist?
+        href: /pages/documentation/why-use-federalist/
+      - text: Access and permissions
+        href: /pages/documentation/access-permissions/
+      - text: Customer responsibilities
+        href: /pages/documentation/customer-responsibilities/
+      - text: Getting started with a sandbox
+        href: /pages/documentation/federalist-sandbox/
+      - text: "21st Century IDEA"
+        href: /pages/documentation/21st-century-idea/
+      - text: Getting started with jekyll
+        href: /pages/documentation/getting-started-with-jekyll/
+      - text: Getting started with Netlify CMS
+        href: /pages/documentation/getting-started-with-netlify-cms/
+      - text: Included with Federalist
+        href: /pages/documentation/included-with-federalist/
+      - text: Instructional demos
+        href: /pages/documentation/instructional-demos/
+      - text: Builds and previews
+        href: /pages/documentation/previews/
+      - text: Launch checklist
+        href: /pages/documentation/launch-checklist/
+      - text: Migration guide
+        href: /pages/documentation/migration-guide/
+      - text: Adding forms
+        href: /pages/documentation/forms/
+      - text: Adding search 
+        href: /pages/documentation/search/
+      - text: Site templates
+        href: /pages/documentation/templates/
+      - text: Customizing your site
+        href: /pages/documentation/customization/
+      - text: Using the markup languages
+        href: /pages/documentation/resources/
+      - text: Content guide
+        href: /pages/documentation/content-guide/
+      - text: Custom headers
+        href: /pages/documentation/custom-headers/
+      - text: Federalist.json
+        href: /pages/documentation/federalist-json/
+  - text: For developers
+    href: /pages/documentation/
+    subfolderitems:
+      - text: How Federalist works
+        href: /pages/documentation/how-federalist-works/
+      - text: How builds work
+        href: /pages/documentation/how-builds-work/
+      - text: Specific build errors
+        href: /pages/documentation/build-errors/
+      - text: Environment variables on builds
+        href: /pages/documentation/env-vars-on-federalist-builds/
+      - text: How custom URLs work
+        href: /pages/documentation/custom-urls/
+      - text: Federalist and cloud.gov
+        href: /pages/documentation/cloud-gov/
+      - text: cloud.gov setup
+        href: /pages/documentation/cloud-gov-setup/
+      - text: Node on Federalist
+        href: /pages/documentation/node-on-federalist/
+      - text: RVM on Federalist
+        href: /pages/documentation/rvm-on-federalist/
+      - text: Bundler on Federalist
+        href: /pages/documentation/bundler-on-federalist/
+      - text: Site wide alerts
+        href: /pages/documentation/site-wide-alert/
+      - text: Supported site engines
+        href: /pages/documentation/supported-site-engines/
+      - text: Renaming your site's repository
+        href: /pages/documentation/renaming-site-repository/
+      - text: Monorepos on Federalist
+        href: /pages/documentation/monorepos-on-federalist/

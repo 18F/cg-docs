@@ -9,9 +9,12 @@ This template is for a single page that does not have a date associated with it.
 <div class="usa-layout-docs usa-section bg-accent-warm-light">
   <div class="grid-container">
     <div class="grid-row grid-gap">
-      {% if page.sidenav == true %}
-      {% include sidenav.html documentation_navigation=site.documentation_navigation %}
-      {% endif %}
+      {% case page.sidenav %}
+        {% when true %}
+          {% include sidenav.html documentation_navigation=site.documentation_navigation %}
+        {% when "pages-documentation" %}
+          {% include pages/sidenav.html %}
+      {% endcase %}
 
       <div class="usa-layout-docs__main desktop:grid-col-8 usa-prose bg-white padding-y-8 padding-x-4">
         <h1>{{ page.title }}</h1>

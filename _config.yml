@@ -256,6 +256,8 @@ assets:
     - _assets/images/illustrations
     - assets/font-awesome/css
     - assets/font-awesome/fonts
+    - assets/pages/images
+    - assets/pages/documents
     - node_modules/uswds/dist/img
     - node_modules/uswds/dist/js
     - node_modules/uswds/dist/scss

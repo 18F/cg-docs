@@ -5,7 +5,12 @@ where we provide an easy way to manage your navigation system
 
 <header class="usa-header usa-header--extended" role="banner">
   <div class="usa-navbar">
-    {%- include logo.html -%}
+    {% case page.navigation %}
+      {% when "pages" %}
+        {%- include pages/logo.html -%}
+      {% else %}
+        {%- include logo.html -%}
+    {% endcase %}
     <button class="usa-menu-btn">Menu</button>
   </div>
   <nav role="navigation" class="usa-nav">

@@ -1,0 +1,44 @@
+.figure-seal{
+  text-align: center;
+}
+
+// .figure figcaption {
+//   margin-bottom: 6px;
+//   margin-top: inherit;
+//   text-align: center;
+// }
+p.pages-arrow {
+  @include u-color('ink');
+  @include u-font-family('ui');
+
+
+  display: block;
+
+  &:before {
+    content: '\02192';
+    display: inline-block;
+    @include u-padding-right('105');
+    @include u-text('secondary-vivid');
+    font-family: 'Times New Roman', Arial, sans-serif;
+  }
+}
+
+.pages-steps-circle {
+  background-color: #0271BB;
+  border-radius: 5rem;
+  color: white;
+  font-family: "merriweatherblack";
+  font-size: 2.6rem;
+  height: 5rem;
+  line-height: 5rem;
+  position: relative;
+  width: 5rem;
+}
+
+.pages-card {
+  // margin: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c6cace;
+  border-style: solid;
+}
