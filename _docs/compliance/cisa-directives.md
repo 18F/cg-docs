@@ -12,11 +12,17 @@ The Cybersecurity and Infrastructure Security Agency (CISA) periodically issues 
 In response to CISA Emergency Directives, cloud.gov will:
 * provide required applicability information in our [FedRAMP secure repository: https://community.max.gov/x/mjypgg](https://community.max.gov/x/mjypgg)
 * notify customers and community of the applicability update via our [public status service: https://cloudgov.statuspage.io](https://cloudgov.statuspage.io).
-  *  (posted as a "Resolved Incident" that impacts "Applications" (operational), with "Send Notification")
+  *  (posted as a "Resolved Incident" that impacts "cloud.gov compliance notification" (operational), with "Send Notification")
 
-We will no longer be publicly providing our specific directive compliance status, as future directives could apply to components in the cloud.gov system.
+We will no longer be publicly providing our specific directive compliance status, as future directives could apply to components in the cloud.gov system. 
 
 # FY2021
+
+## CISA Emergency Directive 21-04: Windows Print Spooler
+
+In response to CISA Emergency Directive 21-04, “Mitigate Windows Print Spooler Service Vulnerability” (https://cyber.dhs.gov/ed/21-04/), cloud.gov has provided required applicability information in our FedRAMP secure repository: https://community.max.gov/x/mjypgg
+
+We do not publicly provide specific directive compliance status. Authorized customers can access our FedRAMP package as described at https://cloud.gov/docs/overview/fedramp-tracker/#start-the-ato-process
 
 ## CISA Emergency Directive 21-03 for Pulse Connect Secure: Not impacted
 
